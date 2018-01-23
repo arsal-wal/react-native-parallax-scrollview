@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   Text,
   View,
@@ -282,16 +283,16 @@ ParallaxScrollView.defaultProps = {
 ParallaxScrollView.propTypes = {
   ...ScrollViewPropTypes,
   backgroundSource: Image.propTypes.source,
-  windowHeight: React.PropTypes.number,
-  navBarTitle: React.PropTypes.string,
-  navBarTitleColor: React.PropTypes.string,
-  navBarColor: React.PropTypes.string,
-  userImage: React.PropTypes.string,
-  userName: React.PropTypes.string,
-  userTitle: React.PropTypes.string,
-  headerView: React.PropTypes.node,
-  leftIcon: React.PropTypes.object,
-  rightIcon: React.PropTypes.object
+  windowHeight: PropTypes.number,
+  navBarTitle: PropTypes.string,
+  navBarTitleColor: PropTypes.string,
+  navBarColor: PropTypes.string,
+  userImage: PropTypes.string,
+  userName: PropTypes.string,
+  userTitle: PropTypes.string,
+  headerView: PropTypes.node,
+  leftIcon: PropTypes.object,
+  rightIcon: PropTypes.object
 };
 
 var styles = StyleSheet.create({
